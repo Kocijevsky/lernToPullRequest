@@ -12,59 +12,70 @@
 	float: right;
 }
 
-.b-item-clear{
+.clearfix{
 	clear: both;
 }
 
 
 
-.b-header__line, .b-line{
+.b-header__line{
 	margin: 0 auto;
 	width: 1600px;
 	height: 135px;
 	background-image:url(../img/hLine.png);
 }
 
-.b-line__block{
-	width: 1200px;
+.b-header__position{
+	width: 1180px;
 	margin: 0 auto;
 }
 
-.b-block__logo, .b-logo
+
+.b-block__logo
 {
-	margin-left: 39px;
+	margin-left: 29px;
 	margin-top: 32px;
+	float: left;
 }
 
-.b-line__vert-line,.b-vert-line{ 
-	width: 1px;
-    height: 22px;
-    background-color: rgba(79, 79, 79, 1);
+.b-line__vert-line{ 
+	
     margin-top: 60px;
     margin-left: 30px;
+    float: left;
 }
 
-.b-line__text, .b-text{
+.b-vert-line{
+	width: 1px;
+	height: 22px;
+	background-color: rgba(79, 79, 79, 1);
+}
+
+.b-line__text{
+	margin-top: 65px;
+	margin-left: 23px;
+	float: left;
+}
+
+.b-text{
 	font-size: 12px;
     color: #666;
-    margin-top: 65px;
-    margin-left: 23px;
 }
-.b-line__main-menu, .b-main-menu{
+
+.b-line__main-menu{
 	margin-top: 58px;
-    display: inline;
+	float: right;
 }
 
 .b-main-menu__item{
 	text-decoration: none;
     font-size: 15px;
+    font-weight: bold;
     color: #999;
     padding: 10px 30px 10px 6px;
-    font-weight: bold;
-	
-    border-radius: 5%;
+    
     -moz-border-radius: 5%;
-    -webkit-border-radius: 5%;
+ 	border-radius: 5%;
 }
 .b-main-menu__item:link, .b-main-menu__item:visited{}
 .b-main-menu__item:hover{
@@ -76,15 +87,13 @@ background-color: rgba(104, 57, 169, 1);
 color:#ffffff;
 }
 
-.b-header__cords, .b-cords{
-	margin: 0 auto;
-	width: 1180px;
+.b-cords{
 	height: 80px;
 	background-image: url(../img/adress-line.gif);
 }
 
 
-.b-cords__email, .b-email{
+.b-email{
 	text-decoration: none;
 	font-family: Myriad Pro;
 	font-size: 12px;
@@ -96,10 +105,12 @@ color:#ffffff;
 .b-cords__text_position{
 	margin: 32px 15px;
 	letter-spacing: 1px;
+	float: left;
 }
 
 .b-cords__vertical-line_position{
 	margin: 29px 15px;
+	float: left;
 }
 
 .b-cords_pic-position{
@@ -111,9 +122,7 @@ color:#ffffff;
 	margin-left:-1px;
 }
 
-.b-header__slider, .b-slider{
-	margin: 0 auto;
-	width: 1180px;
+.b-header__slider{
 	height: 575px;
 	background-image: url(../img/slider-photo2.png);
 }
@@ -122,25 +131,20 @@ color:#ffffff;
 	width: 480px;
 }
 
-.b-slider__button_1{
+.b-slider__button{
 	width:240px;
 	height: 12px;
+	float: left;
 }
-.b-slider__button_1:link, .b-slider__button_1:visited{background-color:#6666cc;}
-.b-b-slider__button_1:hover, .b-slider__button_1:active{background-color:#3333cc;}
-
-.b-slider__button_2{
-	width:240px;
-	height: 12px;
-}
-.b-slider__button_2:link, .b-slider__button_2:visited{background-color:#3333cc;}
-.b-b-slider__button_2:hover, .b-slider__button_2:active{background-color:#6666cc;}
+.b-slider__button:link, .b-slider__button:visited{background-color:#6666cc;}
+.b-b-slider__button:hover, .b-slider__button:active{background-color:#3333cc;}
 
 
 .b-slider__scroll-left{
 	position: relative;
 	top: 257px;
 	right: 488px;
+	float: left;
 }
 
 .b-slider__text{
@@ -171,10 +175,11 @@ color:#ffffff;
 	position: relative;
 	top: 51px;
 	left: 8px;
+	float: right;
 }
 
 
-.b-slider__click, .b-click{
+.b-slider__click{
 	margin: 0 auto;
 	background: rgba(00, 00, 00, 0.7);
 	width: 100px;
@@ -197,7 +202,7 @@ color:#ffffff;
     width: 10px;
     height: 10px;
     padding: 9px 5px;
-	
+	float: left;
 }
 
 .b-click__input{
@@ -229,7 +234,7 @@ color:#ffffff;
 	width: 1062px;
 }
 
-.b-content__menu, .b-menu{
+.b-content__menu{
 	width: 100%;
 	margin-top: 0px;
 	margin-bottom: 29px;
@@ -244,8 +249,9 @@ color:#ffffff;
 	border: 3px solid #6666cc;
 	padding: 6px 0px 5px 20px;
 	font-size: 14px;
+	float: left;
 } 
-.b-content-menu__triagle, .b-triagle{
+.b-content-menu__triagle{
 	padding-left: 56px;
 	padding-right: 12px;
 }
@@ -263,13 +269,13 @@ color:#ffffff;
 }
 	
 	
-.b-content__block, .b-block{
+.b-content__block{
 	width: 340px;
 	height:420px;
 	color: #6666cc;
 	margin: 30px 0 5px 0;
 }
-.b-block__pic, .b-pic{
+.b-block__pic{
 	width: 340px;
 	height:270px;
 }
@@ -290,7 +296,7 @@ color:#ffffff;
 	margin-right: 20px; 
 }
 
-.b-content__gradient-line, .b-gradient-line{
+.b-content__gradient-line{
 	margin-top: 67px;
 }
 .b-grey-triagle{
@@ -343,13 +349,16 @@ color:#ffffff;
 }
 
 
-.b-content__diagrams, .b-diagrams{
+.b-content__diagrams{
 	margin-top: 172px;
 	margin-bottom: 473px;
 }
 
-.b-content__diagram, .b-diagram{
+.b-content__diagram{
 	margin: 13px 12px 4px 0;
+}
+
+.b-diagram{
 	width:470px;
 	height:30px;
 }
@@ -397,7 +406,7 @@ color:#ffffff;
 	width: 1600px;
 }
 
-.b-dark__coments, .b-coments{
+.b-dark__coments{
 	height: 565px;
 	background-image: url(../img/content-bg-dark.png);
 }
@@ -439,14 +448,17 @@ color:#ffffff;
 	line-height: 1.6;
 }
 
-.b-dark__article, .b-article{
+.b-dark__article{
 	height: 470px;
 	background-image: url(../img/content-bg-dark-2.png);
 }
 
-.b-article__links, .b-links{
-	width: 220px;
+.b-article__links{
 	clear: right;
+}
+
+.b-links{
+	width: 220px;
 	margin: 13px 20px 0 0;
 }
 
@@ -474,9 +486,12 @@ color: rgba(38, 28, 38, 1);
 	width: 394px;
 }
 
-.b-article__gallary,  .b-gallary{
-	width: 380px;
+.b-article__gallary{
 	margin-right:0px;
+}
+
+.b-gallary{
+	width: 380px;
 }
 
 .b-gallary__text{
@@ -501,32 +516,3 @@ color: rgba(38, 28, 38, 1);
 	color: rgba(63, 54, 63, 1);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-<!-- В процессе верстки образовалось кучу ньансов, которые без разговора с работодателем решить затруднитильно: -->
-<!-- 1-Шрифт изначально нестандартен для браузеров, поэтому взял наиболее на него похожий -->
-<!-- 2-В header -> main-menu также не понятно как прописывать, в виде ссылок или кнопок(выбрал ссылки потому-что и проще и удобней)-->
-<!-- 3-Верхнее меню в скрол бар, зачем оно если фоток должно быть 4, а оно отображает только 2, напрашивается ответ-для красоты-->
-<!-- 4-Цвета также по большей части нестандарты для браузеров, поетому есть 2 решения использовать фото и сайт будет в изначальных цветах
-	, но упадет скорость его открытия, или же использовать известные браузером цвета, тогда изменится цветовая гамма сайта
